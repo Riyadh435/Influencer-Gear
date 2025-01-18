@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  background:#f1f1f1;
+}
+
+nav {
+  max-width: 1300px;
+  margin: 10px auto;
+  padding: 0 15px;
+}
+
+nav .title {
+  color: #3a3a3a;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: #3a3a3a;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.header {
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+.header-details {
+  margin-top: 50px;
+  max-width: 600px;
+  color: #3a3a3a;
+}
+.header-details h1 {
+  color: #3a3a3a;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 5px;
+}
+.header-details p {
+ 
+  font-size: 1rem;
+  font-weight: 600;
+}
+.header-details button {
+  background-color: #e02c6d;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  color: white;
+  border-radius: 35px;
+  margin: 10px;
+}
+
+.header-bg {
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  background-image: url(../images/circle.svg);
+  background-repeat: no-repeat;
+}
+
+.header-bg img {
+  align-items: center;
+  width: 100%;
+}
+
+
+.cards{
+    max-width: 1100px;
+    margin: 70px auto;
+    display: grid;
+    
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+
+}
+
+
+.cards .card{
+    height: 450px;
+    width: 320px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+
+.card .img{
+    height: 280px;
+    width: 220px;
+}
+.img img{
+    padding: 10px;
+    border-radius: 8px;
+}
+.card .details{
+    width: 220px;
+    margin-left: 10px;
+}
+.card .details h2{
+    color: #18191F;
+    margin:2px;
+    font-size: 1.7rem;
+    font-weight: normal;
+}
+.card .details p{
+    text-align: justify;
+    font-size: .8rem;
+    font-weight: bold;
+    color: #787885;
+}
+.card .details .price{
+    margin: 0;
+    font-weight:600;
+    font-size: 1.5rem;
+    color: #787885
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  nav,
+  nav ul,
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .header-details h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .header-details p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .header-bg {
+    background-image: none;
+  }
+}
